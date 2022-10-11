@@ -10,8 +10,8 @@ pipeline {
         }
         stage('deploy to S3'){
             steps{
-               sh 'aws s3 cp . s3://sanathwebpage --recursive'
-               sh 'aws s3 cp s3://sanathwebpage/hello.txt copy/.'
+               sh 'aws s3 cp . s3://terraform-s3-raj-bucket --recursive'
+               sh 'aws s3 cp s3://sterraform-s3-raj-bucket/hello.txt copy/.'
 
             }
         }
